@@ -1,0 +1,14 @@
+<div align="center">
+  <img src="assets/rainbow-title.svg" alt="Awsome Title">
+  <p>A list of awesome Web Dev, tools, frameworks, and extensions to make life easier!</p>
+</div>
+
+---
+
+> Last Updated: {{ date }}
+
+## Table of Contents
+
+{{#each lists}}
+- [{{this.title}}]({{this.githubUrl}})
+{{/each}}

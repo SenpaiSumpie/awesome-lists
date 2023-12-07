@@ -34,5 +34,6 @@
       }
     }
     // [Show Notification](command:commands.showNotification?\"arguments\")
-  }
+  },
+  "[handlebars]": {}
 }
