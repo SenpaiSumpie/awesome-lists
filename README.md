@@ -1,9 +1,54 @@
 <div align="center">
-  <img src="data:image/svg+xml;base64,PHN2ZyBmaWxsPSJub25lIiB2aWV3Qm94PSIwIDAgODAwIDg2IiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPjxmb3JlaWduT2JqZWN0IHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiPjxkaXYgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGh0bWwiPjxzdHlsZT5Aa2V5ZnJhbWVzIHJhaW5ib3dfYW5pbWF0aW9uezAlLHRve2JhY2tncm91bmQtcG9zaXRpb246MCAwfTUwJXtiYWNrZ3JvdW5kLXBvc2l0aW9uOjEwMCUgMH19aDEsc3Zne2ZvbnQtZmFtaWx5OnN5c3RlbS11aSwtYXBwbGUtc3lzdGVtLCZhcG9zO1NlZ29lIFVJJmFwb3M7LFJvYm90byxIZWx2ZXRpY2EsQXJpYWwsc2Fucy1zZXJpZiwmYXBvcztBcHBsZSBDb2xvciBFbW9qaSZhcG9zOywmYXBvcztTZWdvZSBVSSBFbW9qaSZhcG9zO30ucHJlZml4X19jb250ZW50LHN2Z3t3aWR0aDoxMDAlO2hlaWdodDpmaXQtY29udGVudH1zdmd7ZGlzcGxheTpibG9jaztjb2xvcjojZmZmfS5wcmVmaXhfX2NvbnRlbnR7ZGlzcGxheTpmbGV4O2FsaWduLWl0ZW1zOmNlbnRlcjtqdXN0aWZ5LWNvbnRlbnQ6Y2VudGVyfWgxe3doaXRlLXNwYWNlOm5vd3JhcDt0ZXh0LWFsaWduOmNlbnRlcjt0ZXh0LWRlY29yYXRpb246dW5kZXJsaW5lO2ZvbnQtc2l6ZTozMnB4O2xldHRlci1zcGFjaW5nOjVweDtiYWNrZ3JvdW5kOmxpbmVhci1ncmFkaWVudCh0byByaWdodCwjNjZmLCMwOWYsIzBmMCwjZjM5LCM2NmYpOy13ZWJraXQtYmFja2dyb3VuZC1jbGlwOnRleHQ7YmFja2dyb3VuZC1jbGlwOnRleHQ7Y29sb3I6dHJhbnNwYXJlbnQ7YW5pbWF0aW9uOnJhaW5ib3dfYW5pbWF0aW9uIDZzIGVhc2UtaW4tb3V0IGluZmluaXRlO2JhY2tncm91bmQtc2l6ZTo0MDAlIDEwMCV9PC9zdHlsZT48ZGl2IGNsYXNzPSJwcmVmaXhfX2NvbnRlbnQiPjxoMT5Bd2Vzb21lIExpc3RzPC9oMT48L2Rpdj48L2Rpdj48L2ZvcmVpZ25PYmplY3Q+PC9zdmc+" />
-  <p>A list of awesome Web Dev, tools, frameworks, and extensions to make life easier!</p>
+
+![rainbow-title](/assets/rainbow-title.svg)
+
+<p>A list of awesome Web Dev, tools, frameworks, and extensions to make life easier!</p>
+
 </div>
 
 ---
+
+<svg fill="none" viewBox="0 0 800 86" xmlns="http://www.w3.org/2000/svg">
+<foreignObject width="100%" height="100%">
+<div xmlns="http://www.w3.org/1999/xhtml">
+<style>
+.content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: fit-content;
+}
+.content h1 {
+  font-family: system-ui;
+  white-space: nowrap;
+  text-align: center;
+  text-decoration: underline;
+  font-size: 32px;
+  letter-spacing: 5px;
+  background: linear-gradient(to right, #6666ff, #0099ff, #00ff00, #ff3399, #6666ff);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  animation: rainbow_animation 6s ease-in-out infinite;
+  background-size: 400% 100%;
+}
+@keyframes rainbow_animation {
+  0%,
+  100% {
+    background-position: 0 0;
+  }
+  50% {
+    background-position: 100% 0;
+  }
+}
+</style>
+<div class="content">
+<h1>Awesome Lists</h1>
+</div>
+</div>
+</foreignObject>
+</svg>
 
 ## Contents
 
