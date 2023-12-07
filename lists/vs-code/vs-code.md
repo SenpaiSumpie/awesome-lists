@@ -1,5 +1,5 @@
 <div align="center">
-  <img src="data:image/svg+xml,%3Csvg fill='none' viewBox='0 0 800 86' xmlns='http://www.w3.org/2000/svg'%3E%3CforeignObject width='100%25' height='100%25'%3E%3Cdiv xmlns='http://www.w3.org/1999/xhtml'%3E%3Cstyle%3Eh1 %7Bwhite-space: nowrap;%7Dh1%3Espan %7Bcolor: %23a480e2;white-space: inherit;%7Dsvg %7Bdisplay: block;color: white;font-family: system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji','Segoe UI Emoji';width: 100%25;height: fit-content;%7D.content %7Bdisplay: flex;align-items: center;justify-content: center;width: 100%25;height: fit-content;%7D%3C/style%3E%3Cdiv class='content'%3E%3Ch1%3EAwesome | %3Cspan%3EVSCode Extensions%3C/span%3E%3C/h1%3E%3C/div%3E%3C/div%3E%3C/foreignObject%3E%3C/svg%3E" >
+  <img src="assets/title.svg" >
   <p>This is a curated list of the awesome must-use extensions for VS Code!</p>
 </div>
 

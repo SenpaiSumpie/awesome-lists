@@ -13,19 +13,13 @@
     }
   },
   "commands.workspaceCommands": {
-    "svg-to-data-uri": {
-      "command": "replacerules.runRule",
-      "args": {
-        "ruleName": "SVG2DataURI"
-      }
-    },
     "Svg-Tools": {
       "command": "editor.action.focusNextCursor",
       "when": "never",
       "statusBar": {
         "text": "✨SVG TOOLS✨",
         "color": "magenta",
-        "markdownTooltip": "### [SVG → Data URI](command:svg-to-data-uri)",
+        "markdownTooltip": "### [Copy Data URI](command:svg.copyDataUri)\n\n### [Minify CSS](command:extension.minifySelection.minifySelectedCSS)",
         "activeEditorGlob": "**/*.svg"
       }
     },
@@ -35,8 +29,8 @@
       "statusBar": {
         "text": "MARKDOWN TOOLS",
         "color": "#289eff",
-        "markdownTooltip": ""
-        // "activeEditorGlob": "**/*.md"
+        "markdownTooltip": "",
+        "activeEditorGlob": "**/*.md"
       }
     }
     // [Show Notification](command:commands.showNotification?\"arguments\")
