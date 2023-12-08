@@ -7,11 +7,21 @@ import Handlebars from 'handlebars';
 import { createSpinner } from 'nanospinner';
 import path from 'path';
 import { fileURLToPath } from 'url';
+import { $ } from 'execa';
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
+import git from 'simple-git';
+// git rev-parse --abbrev-ref HEAD
 /* -------------------------------------------------------------------------- */
 await updateMain();
 /* -------------------------------------------------------------------------- */
 async function updateMain() {
+  const BRANCH = await git().raw(['rev-parse', '--abbrev-ref', 'HEAD']);
+
+  if (!BRANCH) {
+    console.log(chalk.yellow('System Error: Cannot get current branch name...'));
+    process.exit(0);
+  }
+
   const spinner = createSpinner('Updating Main README.md...').start();
 
   // get the name of each folder in the lists directory
@@ -21,7 +31,10 @@ async function updateMain() {
     let allLists = await fsp.readdir(path.join(__dirname, '..', 'lists')).then((lists) => {
       return lists.map((list) => {
         return {
-          githubUrl: `https://github.com/SenpaiSumpie/awesome-lists/blob/main/lists/${list}/${list}.md`,
+          githubUrl: `https://github.com/SenpaiSumpie/awesome-lists/blob/${BRANCH.trim().replace(
+            '\n',
+            ''
+          )}/lists/${list}/${list}.md`,
           title: capitalCase(list, { keepSpecialCharacters: false }),
         };
       });

@@ -1,4 +1,6 @@
 // @ts-check
+console.clear();
+/* -------------------------------------------------------------------------- */
 import { select } from '@inquirer/prompts';
 import c from 'chalk';
 import { $ } from 'execa';
@@ -7,15 +9,27 @@ import path from 'path';
 import { fileURLToPath } from 'url';
 const $$ = $({ stdio: 'inherit' });
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
+import { Command } from 'commander';
 /* -------------------------------------------------------------------------- */
-console.clear();
+
+const program = new Command();
+
+program
+  .option('-c, --create', 'Create a new awesome list')
+  .option('-u, --update', 'Update the main README.md file with the latest lists')
+  .parse(process.argv);
+//
+
+program.parse();
+
+const programOptions = program.opts();
+
+/* -------------------------------------------------------------------------- */
 let answer;
-
-// if args is create or update, then use that
-const rtArg = process.argv[2].trim() ?? '';
-
-if (!!rtArg && (rtArg === 'create' || rtArg === 'update')) {
-  answer = rtArg === 'create' ? './make-new-list.js' : './update-main.js';
+if (!!programOptions?.create) {
+  answer = './make-new-list.js';
+} else if (!!programOptions?.update) {
+  answer = './update-main.js';
 } else {
   answer = await select({
     message: 'What would you like to do?',
