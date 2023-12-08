@@ -1,4 +1,4 @@
 #!/usr/bin/env sh
 . "$(dirname -- "$0")/_/husky.sh"
 
-# pnpm run awesome update && git add README.md
+pnpm run awesome update && git add .husky/pre-commit README.md
