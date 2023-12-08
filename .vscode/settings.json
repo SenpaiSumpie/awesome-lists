@@ -1,0 +1,39 @@
+{
+  "markdown-preview-enhanced.automaticallyShowPreviewOfMarkdownBeingEdited": true,
+  "[markdown]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.wordWrap": "off",
+    "editor.formatOnSave": true
+  },
+  "replacerules.rules": {
+    "SVG2DataURI": {
+      "find": ["(\\n)", "(\\s{2,})", "\"", "%", "<", ">", "{", "}", "#", "^(.*)$"],
+      "flags": "g",
+      "replace": ["", "", "'", "%25", "%3C", "%3E", "%7B", "%7D", "%23", "\"data:image/svg+xml,$1\""]
+    }
+  },
+  "commands.workspaceCommands": {
+    "Svg-Tools": {
+      "command": "editor.action.focusNextCursor",
+      "when": "never",
+      "statusBar": {
+        "text": "✨SVG TOOLS✨",
+        "color": "magenta",
+        "markdownTooltip": "### [Copy Data URI](command:svg.copyDataUri)\n\n### [Minify CSS](command:extension.minifySelection.minifySelectedCSS)",
+        "activeEditorGlob": "**/*.svg"
+      }
+    },
+    "Markdown-Tools": {
+      "command": "editor.action.focusNextCursor",
+      "when": "never",
+      "statusBar": {
+        "text": "MARKDOWN TOOLS",
+        "color": "#289eff",
+        "markdownTooltip": "",
+        "activeEditorGlob": "**/*.md"
+      }
+    }
+    // [Show Notification](command:commands.showNotification?\"arguments\")
+  },
+  "[handlebars]": {}
+}
