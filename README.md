@@ -5,13 +5,13 @@
 
 ---
 
-> Last Updated: 12/7/2023, 5:53:04 PM
+> Last Updated: 12/7/2023, 6:06:17 PM
 
 ## Table of Contents
 
-- [Back End](https://github.com/parkercode98/test-awesome-list/blob/main/lists/back-end/back-end.md)
-- [Databases](https://github.com/parkercode98/test-awesome-list/blob/main/lists/databases/databases.md)
-- [Front End](https://github.com/parkercode98/test-awesome-list/blob/main/lists/front-end/front-end.md)
-- [Miscellaneous](https://github.com/parkercode98/test-awesome-list/blob/main/lists/miscellaneous/miscellaneous.md)
-- [Node Packages](https://github.com/parkercode98/test-awesome-list/blob/main/lists/node-packages/node-packages.md)
-- [Vs Code](https://github.com/parkercode98/test-awesome-list/blob/main/lists/vs-code/vs-code.md)
+- [Back End](https://github.com/SenpaiSumpie/awesome-lists/blob/main/lists/back-end/back-end.md)
+- [Databases](https://github.com/SenpaiSumpie/awesome-lists/blob/main/lists/databases/databases.md)
+- [Front End](https://github.com/SenpaiSumpie/awesome-lists/blob/main/lists/front-end/front-end.md)
+- [Miscellaneous](https://github.com/SenpaiSumpie/awesome-lists/blob/main/lists/miscellaneous/miscellaneous.md)
+- [Node Packages](https://github.com/SenpaiSumpie/awesome-lists/blob/main/lists/node-packages/node-packages.md)
+- [Vs Code](https://github.com/SenpaiSumpie/awesome-lists/blob/main/lists/vs-code/vs-code.md)

@@ -21,7 +21,7 @@ async function updateMain() {
     let allLists = await fsp.readdir(path.join(__dirname, '..', 'lists')).then((lists) => {
       return lists.map((list) => {
         return {
-          githubUrl: `https://github.com/parkercode98/test-awesome-list/blob/main/lists/${list}/${list}.md`,
+          githubUrl: `https://github.com/SenpaiSumpie/awesome-lists/blob/main/lists/${list}/${list}.md`,
           title: capitalCase(list, { keepSpecialCharacters: false }),
         };
       });
