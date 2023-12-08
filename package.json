@@ -8,11 +8,6 @@
     "awesome": "node ./scripts/index.js",
     "prepare": "husky install"
   },
-  "husky": {
-    "hooks": {
-      "pre-commit": "pnpm run awesome update"
-    }
-  },
   "keywords": [],
   "license": "ISC",
   "dependencies": {
