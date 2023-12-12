@@ -1,11 +1,11 @@
-<div align="center">
-  <img src="assets/title.svg" >
+<header align="center" data-title="VSCode Extensions">
+  <img src="assets/title.svg" />
   <p>This is a curated list of the awesome must-use extensions for VS Code!</p>
-</div>
+</header>
 
 ---
 
-> Last Updated: 2023-09-16 11:06:50AM
+> Last Updated: 12/12/2023, 5:09:00 PM
 
 <u><h4>Contents</h4></u>
 
@@ -15,11 +15,11 @@
 
 - [Quality of Life Extensions](#quality-of-life-extensions)
 - [Themes, Icons and Graphical Extensions](#themes-icons-and-graphical-extensions)
-- [Testing / Debugging Extensions](#testing--debugging-extensions)
+- [Testing / Debugging Extensions](#testing-debugging-extensions)
 
 <!-- /code_chunk_output -->
 
-_All extension links are to the official Microsoft Visual Studio Code Marketplace_
+<!-- _Additional Notes Here_ -->
 
 ---
 

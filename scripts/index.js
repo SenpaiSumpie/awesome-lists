@@ -3,13 +3,14 @@ console.clear();
 /* -------------------------------------------------------------------------- */
 import { select } from '@inquirer/prompts';
 import c from 'chalk';
+import { Command } from 'commander';
 import { $ } from 'execa';
 import fse from 'fs-extra';
 import path from 'path';
-import { fileURLToPath } from 'url';
+import { _dirname } from './utils.js';
 const $$ = $({ stdio: 'inherit' });
-const __dirname = path.dirname(fileURLToPath(import.meta.url));
-import { Command } from 'commander';
+/* -------------------------------------------------------------------------- */
+const __dirname = _dirname();
 /* -------------------------------------------------------------------------- */
 
 const program = new Command();

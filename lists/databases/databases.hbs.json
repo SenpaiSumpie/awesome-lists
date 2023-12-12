@@ -1,0 +1,8 @@
+{
+  "$schema": "../../scripts/data/schema/list-schema.json",
+  "title": "Databases",
+  "fileName": "databases",
+  "description": "A list of awesome database tools",
+  "date": "2023-12-12T23:07:54.009Z",
+  "categories": []
+}
