@@ -6,16 +6,26 @@ import fsp from 'fs/promises';
 import Handlebars from 'handlebars';
 import { createSpinner } from 'nanospinner';
 import path from 'path';
-import { fileURLToPath } from 'url';
-import { $ } from 'execa';
-const __dirname = path.dirname(fileURLToPath(import.meta.url));
-import git from 'simple-git';
-// git rev-parse --abbrev-ref HEAD
+import { _dirname, getCurrentBranch } from './utils.js';
+import { Command } from 'commander';
 /* -------------------------------------------------------------------------- */
+const __dirname = _dirname();
+/* -------------------------------------------------------------------------- */
+const program = new Command();
+
+program
+  .name('update-main')
+  .description('Update the main README.md file')
+  .version('1.0.0')
+  .option('-b, --branch [branch]', 'Specify the branch to update README.md on', '')
+  .parse(process.argv);
+//
+const programOptions = program.opts();
+/* ---------------------------------- */
 await updateMain();
 /* -------------------------------------------------------------------------- */
 async function updateMain() {
-  const BRANCH = await git().raw(['rev-parse', '--abbrev-ref', 'HEAD']);
+  const BRANCH = programOptions?.branch || (await getCurrentBranch());
 
   if (!BRANCH) {
     console.log(chalk.yellow('System Error: Cannot get current branch name...'));
@@ -24,17 +34,13 @@ async function updateMain() {
 
   const spinner = createSpinner('Updating Main README.md...').start();
 
-  // get the name of each folder in the lists directory
   spinner.update({ text: 'Retrieving all lists...' });
 
   try {
     let allLists = await fsp.readdir(path.join(__dirname, '..', 'lists')).then((lists) => {
       return lists.map((list) => {
         return {
-          githubUrl: `https://github.com/SenpaiSumpie/awesome-lists/blob/${BRANCH.trim().replace(
-            '\n',
-            ''
-          )}/lists/${list}/${list}.md`,
+          githubUrl: `https://github.com/SenpaiSumpie/awesome-lists/blob/${BRANCH}/lists/${list}/${list}.md`,
           title: capitalCase(list, { keepSpecialCharacters: false }),
         };
       });
@@ -44,8 +50,6 @@ async function updateMain() {
       console.log(chalk.yellow('No lists found!'));
       process.exit(0);
     }
-
-    // console.log(allLists);
 
     spinner.update({ text: 'Generating contents...' });
 

@@ -1,11 +1,11 @@
-<div align="center">
-  <img src="assets/rainbow-title.svg" alt="Awsome Title">
+<header align="center" data-title="">
+  <img src="assets/rainbow-title.svg" />
   <p>A list of awesome Web Dev, tools, frameworks, and extensions to make life easier!</p>
-</div>
+</header>
 
 ---
 
-> Last Updated: 12/7/2023, 7:19:42 PM
+> Last Updated: 12/12/2023, 5:35:06 PM
 
 ## Table of Contents
 

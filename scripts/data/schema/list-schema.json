@@ -1,0 +1,49 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "definitions": {
+    "item": {
+      "type": "object",
+      "properties": {
+        "name": { "type": "string" },
+        "link": {
+          "type": "string",
+          "format": "uri"
+        },
+        "description": { "type": "string" }
+      },
+      "required": ["name", "description"]
+    },
+    "category": {
+      "type": "object",
+      "properties": {
+        "name": { "type": "string" },
+        "items": {
+          "type": "array",
+          "items": { "$ref": "#/definitions/item" }
+        }
+      },
+      "required": ["name", "items"]
+    }
+  },
+  "type": "object",
+  "properties": {
+    "title": {
+      "type": "string"
+    },
+    "fileName": {
+      "type": "string"
+    },
+    "description": {
+      "type": "string"
+    },
+    "date": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "categories": {
+      "type": "array",
+      "items": { "$ref": "#/definitions/category" }
+    }
+  },
+  "required": ["title", "fileName", "description", "date", "categories"]
+}

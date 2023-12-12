@@ -1,0 +1,8 @@
+{
+  "$schema": "../../scripts/data/schema/list-schema.json",
+  "title": "Front-End",
+  "fileName": "front-end",
+  "description": "A list of awesome front-end tools",
+  "date": "2023-12-12T23:08:11.022Z",
+  "categories": []
+}

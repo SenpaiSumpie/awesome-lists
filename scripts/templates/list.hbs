@@ -1,7 +1,7 @@
-<div align="center">
-  <img src="assets/title.svg" >
+<header align="center" data-title="{{ title }}">
+  <img src="assets/title.svg" />
   <p>{{ description }}</p>
-</div>
+</header>
 
 ---
 
@@ -13,10 +13,35 @@
 
 <!-- code_chunk_output -->
 
+{{#if categories}}
+{{#each categories}}
+- [{{this.name}}](#{{kebab this.name}})
+{{/each}}
+{{/if}}
+
 <!-- /code_chunk_output -->
 
 <!-- _Additional Notes Here_ -->
 
 ---
 
-<!-- ## Header -->
+{{#if categories}}
+{{#each categories}}
+## {{this.name}}
+
+|Name|Description|
+|---|---|
+{{#if this.items}}
+{{#each this.items}}
+{{#if this.link}}
+|[{{this.name}}]({{this.link}})|{{this.description}}|
+{{else}}
+|{{this.name}}|{{this.description}}|
+{{/if}}
+{{/each}}
+{{else}}
+|||
+{{/if}}
+
+{{/each}}
+{{/if}}
