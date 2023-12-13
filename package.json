@@ -9,7 +9,8 @@
     "start": "pnpm run awesome",
     "prepare": "husky install",
     "dev": "node ./scripts/dev.js",
-    "update-main": "node ./scripts/update-main.js"
+    "update-main": "node ./scripts/update-main.js",
+    "pre-commit": "node ./scripts/husky/pre-commit.js"
   },
   "keywords": [],
   "license": "ISC",

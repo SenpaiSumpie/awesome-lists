@@ -1,5 +1,4 @@
 #!/usr/bin/env sh
 . "$(dirname -- "$0")/_/husky.sh"
 
-node ./scripts/husky/pre-commit.js
-echo "Committing..."
+pnpm run pre-commit
