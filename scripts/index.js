@@ -28,37 +28,36 @@ const programOptions = program.opts();
 /* -------------------------------------------------------------------------- */
 let answer;
 if (!!programOptions?.create) {
-  answer = './make-new-list.js';
+  answer = `node ${path.join(__dirname, 'make-new-list.js')}`;
 } else if (!!programOptions?.update) {
-  answer = './update-main.js';
+  answer = `node ${path.join(__dirname, 'update-main.js')}`;
 } else {
   answer = await select({
     message: 'What would you like to do?',
     choices: [
-      { value: './make-new-list.js', name: 'Create a new list', description: 'Create a new awesome list' },
       {
-        value: './update-main.js',
+        value: `node ${path.join(__dirname, 'make-new-list.js')}`,
+        name: 'Create a new list',
+        description: 'Create a new awesome list',
+      },
+      {
+        value: `node ${path.join(__dirname, 'update-main.js')}`,
         name: 'Update Main README.md',
         description: 'Update the main README.md file with the latest lists',
       },
+      { value: `pnpm run dev`, name: 'Start Development Server', description: 'Start Development Server' },
       { name: '🍿', value: 'exit', description: 'Just looking around...(exit)' },
     ],
   });
 }
-
+// Start Development Server
 if (answer === 'exit') {
   console.clear();
   process.exit(0);
 }
 
 try {
-  const filePath = path.join(__dirname, answer);
-
-  const fileExists = await fse.exists(filePath);
-
-  if (!fileExists) throw new Error('File does not exist');
-
-  await $$`node ${filePath}`;
+  await $$`${answer}`;
 } catch (err) {
   console.log(`\n${c.red`Oops!`} ${c.yellow`(⚆_⚆)`}\n`.concat(c.red(`Something went wrong.\n${err?.message ?? ''}`)));
   process.exit(0);
