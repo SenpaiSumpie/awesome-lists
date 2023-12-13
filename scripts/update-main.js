@@ -17,7 +17,7 @@ program
   .name('update-main')
   .description('Update the main README.md file')
   .version('1.0.0')
-  .option('-b, --branch [branch]', 'Specify the branch to update README.md on', '')
+  .option('-b, --branch [branch]', 'Specify the branch to update README.md on', 'main')
   .parse(process.argv);
 //
 const programOptions = program.opts();
@@ -25,7 +25,7 @@ const programOptions = program.opts();
 await updateMain();
 /* -------------------------------------------------------------------------- */
 async function updateMain() {
-  const BRANCH = programOptions?.branch || (await getCurrentBranch());
+  const BRANCH = programOptions.branch;
 
   if (!BRANCH) {
     console.log(chalk.yellow('System Error: Cannot get current branch name...'));

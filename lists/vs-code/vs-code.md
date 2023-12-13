@@ -5,7 +5,7 @@
 
 ---
 
-> Last Updated: 12/12/2023, 5:09:00 PM
+> Last Updated: 12/12/2023, 6:53:16 PM
 
 <u><h4>Contents</h4></u>
 
@@ -15,7 +15,7 @@
 
 - [Quality of Life Extensions](#quality-of-life-extensions)
 - [Themes, Icons and Graphical Extensions](#themes-icons-and-graphical-extensions)
-- [Testing / Debugging Extensions](#testing-debugging-extensions)
+- [Testing / Debugging Extensions](#testing--debugging-extensions)
 
 <!-- /code_chunk_output -->
 
