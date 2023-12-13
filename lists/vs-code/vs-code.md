@@ -1,11 +1,11 @@
-<div align="center">
-  <img src="assets/title.svg" >
+<header align="center" data-title="VSCode Extensions">
+  <img src="assets/title.svg" />
   <p>This is a curated list of the awesome must-use extensions for VS Code!</p>
-</div>
+</header>
 
 ---
 
-> Last Updated: 2023-09-16 11:06:50AM
+> Last Updated: 12/12/2023, 6:53:16 PM
 
 <u><h4>Contents</h4></u>
 
@@ -19,7 +19,7 @@
 
 <!-- /code_chunk_output -->
 
-_All extension links are to the official Microsoft Visual Studio Code Marketplace_
+<!-- _Additional Notes Here_ -->
 
 ---
 

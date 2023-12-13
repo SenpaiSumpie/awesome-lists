@@ -1,0 +1,39 @@
+{
+  "$schema": "../../scripts/data/schema/list-schema.json",
+  "title": "VSCode Extensions",
+  "fileName": "vs-code",
+  "description": "This is a curated list of the awesome must-use extensions for VS Code!",
+  "date": "2023-12-13T00:53:24.518Z",
+  "categories": [
+    {
+      "name": "Quality of Life Extensions",
+      "items": [
+        {
+          "name": "Auto Close Tag",
+          "link": "https://marketplace.visualstudio.com/items?itemName=formulahendry.auto-close-tag",
+          "description": "Automatically add HTML/XML close tag."
+        }
+      ]
+    },
+    {
+      "name": "Themes, Icons and Graphical Extensions",
+      "items": [
+        {
+          "name": "Peacock",
+          "link": "https://marketplace.visualstudio.com/items?itemName=johnpapa.vscode-peacock",
+          "description": "Distinguish between multiple VS Code Instances Easier."
+        }
+      ]
+    },
+    {
+      "name": "Testing / Debugging Extensions",
+      "items": [
+        {
+          "name": "Error Lens",
+          "link": "https://marketplace.visualstudio.com/items?itemName=usernamehw.errorlens",
+          "description": "ErrorLens turbo-charges language diagnostic features by making diagnostics stand out more."
+        }
+      ]
+    }
+  ]
+}

@@ -1,4 +1,5 @@
 #!/usr/bin/env sh
 . "$(dirname -- "$0")/_/husky.sh"
 
-pnpm run awesome update && git add .
+# pnpm run pre-commit
+node ./scripts/husky/pre-commit.js

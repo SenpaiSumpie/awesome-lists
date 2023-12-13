@@ -1,0 +1,42 @@
+{
+  "$schema": "../../scripts/data/schema/list-schema.json",
+  "title": "Node Packages",
+  "fileName": "node-packages",
+  "description": "A list of awesome Web Dev, tools, frameworks, and extensions to make life easier!",
+  "date": "2023-12-12T23:08:29.464Z",
+  "categories": [
+    {
+      "name": "React",
+      "items": []
+    },
+    {
+      "name": "Next JS",
+      "items": [
+        {
+          "name": "Next Cache Explorer",
+          "link": "https://github.com/47ng/next-cache-explorer",
+          "description": "Navigate & debug the Next.js data cache"
+        },
+        {
+          "name": "Some Next Package",
+          "link": "https://github.com",
+          "description": "Something somethings i dont know"
+        }
+      ]
+    },
+    {
+      "name": "TypeScript",
+      "items": [
+        {
+          "name": "TS Pattern",
+          "link": "https://github.com/gvergnaud/ts-pattern",
+          "description": "The exhaustive Pattern Matching library for TypeScript with smart type inference."
+        }
+      ]
+    },
+    {
+      "name": "Miscellaneous",
+      "items": []
+    }
+  ]
+}

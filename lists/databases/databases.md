@@ -1,7 +1,7 @@
-<div align="center">
-  <img src="assets/title.svg" >
+<header align="center" data-title="Databases">
+  <img src="assets/title.svg" />
   <p>A list of awesome database tools</p>
-</div>
+</header>
 
 ---
 
@@ -12,6 +12,8 @@
 <!-- @import "[TOC]" {cmd="toc" depthFrom=1 depthTo=6 orderedList=false} -->
 
 <!-- code_chunk_output -->
+
+
 
 <!-- /code_chunk_output -->
 
