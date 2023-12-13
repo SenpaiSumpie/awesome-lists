@@ -3,20 +3,13 @@
 // -------------------------------------------------------------------------- //
 // @ts-check
 /* -------------------------------------------------------------------------- */
+import { $ } from 'execa';
+import figures from 'figures';
+import { createSpinner } from 'nanospinner';
+/* -------------------------------------------------------------------------- */
+
 (async () => {
-  const confirm = await import('@inquirer/prompts').then((module) => module.confirm);
-  const $ = await import('execa').then((module) => module.$);
-  const figures = await import('figures').then((module) => module.default);
-  const { createSpinner } = await import('nanospinner');
-  /* ------------------------------------------------------------------------ */
   try {
-    // const confirmUpdate = await confirm({
-    //   message: 'Do you want to update the main README.md before commiting?',
-    //   default: true,
-    // });
-
-    // if (!confirmUpdate) process.exit(0);
-
     const spinner = createSpinner('Running pre-commit hook...').start();
 
     const updater = $`pnpm run awesome --update`;
