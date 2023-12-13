@@ -62,4 +62,6 @@ await new Promise((resolve, reject) => {
   }
 });
 
-spinner.update({ text: `${figures.tick} Done!` });
+spinner.success({ text: `Done!` });
+
+process.exit(0);
